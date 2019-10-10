@@ -1,0 +1,69 @@
+[debug] [2019-10-10T04:19:46.735Z] ----------------------------------------------------------------------
+[debug] [2019-10-10T04:19:46.738Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2019-10-10T04:19:46.738Z] CLI Version:   7.4.0
+[debug] [2019-10-10T04:19:46.738Z] Platform:      linux
+[debug] [2019-10-10T04:19:46.738Z] Node Version:  v11.15.0
+[debug] [2019-10-10T04:19:46.738Z] Time:          Thu Oct 10 2019 01:19:46 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-10-10T04:19:46.738Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-10T04:19:46.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-10T04:19:46.745Z] > authorizing via signed-in user
+[debug] [2019-10-10T04:19:46.745Z] [iam] checking project mk-team-projects for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-10T04:19:46.747Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mk-team-projects:testIamPermissions  
+
+[debug] [2019-10-10T04:19:47.878Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-10T04:19:47.893Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mk-team-projects  
+ 
+[debug] [2019-10-10T04:19:49.208Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'mk-team-projects'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-10-10T04:19:49.218Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mk-team-projects/versions  
+
+[debug] [2019-10-10T04:19:50.724Z] <<< HTTP RESPONSE 200
+[info] i  hosting[mk-team-projects]: beginning deploy...
+[info] i  hosting[mk-team-projects]: found 18 files in build
+[debug] [2019-10-10T04:19:50.763Z] [hosting] hash cache [YnVpbGQ] load error: lines is not defined
+[debug] [2019-10-10T04:19:51.003Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2019-10-10T04:19:51.003Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-10T04:19:51.003Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mk-team-projects/versions/eba282af290d9aac:populateFiles  
+ <request body omitted>
+[debug] [2019-10-10T04:19:52.904Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-10T04:19:52.906Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-10T04:19:52.906Z] [hosting] uploads queued: 0
+[debug] [2019-10-10T04:19:52.906Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[mk-team-projects]: file upload complete
+[debug] [2019-10-10T04:19:52.907Z] [hosting] deploy completed after 2181ms
+[debug] [2019-10-10T04:19:53.111Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "/build/asset-manifest.json",
+        "/build/static/js/*.js.map"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "mk-team-projects"
+    },
+    "site": "mk-team-projects",
+    "version": "sites/mk-team-projects/versions/eba282af290d9aac"
+  }
+]
+[info] i  hosting[mk-team-projects]: finalizing version...
+[debug] [2019-10-10T04:19:53.112Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/mk-team-projects/versions/eba282af290d9aac?updateMask=status  
+
+[debug] [2019-10-10T04:19:54.326Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-10T04:19:54.327Z] [hosting] finalized version for mk-team-projects:
+[info] ✔  hosting[mk-team-projects]: version finalized
+[info] i  hosting[mk-team-projects]: releasing new version...
+[debug] [2019-10-10T04:19:54.329Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mk-team-projects/releases?version_name=sites/mk-team-projects/versions/eba282af290d9aac  
+
