@@ -1,8 +1,8 @@
 html, body {
-  background-color: var(--gray-light);
+  // background-color: var(--gray-light);
+  overflow-y: hidden; 
 
   .pink-october {
-    // height: 100vh;
     .img-slider-responsive {
       width: 100%;
       max-width: 500px;
