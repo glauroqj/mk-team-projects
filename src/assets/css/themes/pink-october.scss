@@ -1,3 +1,13 @@
 html, body {
-  background-color: var(--pink);
+  // background-color: var(--gray-light);
+  overflow-y: hidden; 
+
+  .pink-october {
+    .img-slider-responsive {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
 }
