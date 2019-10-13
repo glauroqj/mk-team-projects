@@ -9,5 +9,13 @@ html, body {
       height: auto;
       margin: 0 auto;
     }
+    .seta {
+      height: auto;
+      width: 50px;
+      position: absolute;
+      z-index: 1;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }
