@@ -8,6 +8,7 @@ import {
 
 /** routes */
 import PinkOctober from '../pages/PinkOctober'
+import BlueNovember from '../pages/BlueNovember'
 
 const Routes = (props) => {
   // const [state, setState] = useState({
@@ -33,8 +34,9 @@ const Routes = (props) => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/outubro-rosa" component={PinkOctober} />
+        <Route exact path="/novembro-azul" component={BlueNovember} />
         {/* <PrivateRoute exact path="/admin" component={Admin} auth={props.state.user.account} /> */}
-        <Redirect push to="/outubro-rosa" />
+        <Redirect push to="/novembro-azul" />
       </Switch>
     </BrowserRouter>
   )
