@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react'
 import Loading from '../components/Loading'
 import CarrouselBanner from '../components/CarrouselBanner'
 /** theme */
-import '../assets/css/themes/pink-october.scss'
+import '../assets/css/themes/blue-november.scss'
 
-import img1 from '../assets/images/pink-october/01.png'
-import img2 from '../assets/images/pink-october/02.png'
-import img3 from '../assets/images/pink-october/03.png'
-import img4 from '../assets/images/pink-october/04.png'
-import img5 from '../assets/images/pink-october/05.png'
-import seta from '../assets/images/pink-october/seta.png'
+import img1 from '../assets/images/blue-november/01.png'
+import img2 from '../assets/images/blue-november/02.png'
+import img3 from '../assets/images/blue-november/03.png'
+import img4 from '../assets/images/blue-november/04.png'
+import img5 from '../assets/images/blue-november/05.png'
+import seta from '../assets/images/blue-november/setinha.png'
 
-const PinkOctober = () => {
+const BlueNovember = () => {
   const [state, setState] = useState({
     loading: false,
     arrayImg: [
@@ -46,4 +46,4 @@ const PinkOctober = () => {
   )
 }
 
-export default PinkOctober
+export default BlueNovember
