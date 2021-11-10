@@ -1,25 +1,48 @@
 {
-  "short_name": "Team Marketing Products",
-  "name": "Team Marketing Products",
-  "icons": [
+  "name": "Sympla",
+  "short_name": "Sympla",
+  "description": "Plataforma de Eventos, Ingressos Online, Gestão e Venda de Inscrições.",
+  "theme_color": "#0097ff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "prefer_related_applications": true,
+  "related_applications": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.sympla.tickets&hl=pt_BR"
+    }, {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/br/app/sympla-ingressos-para-os-melhores/id1136318924"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "ios": {
+    "apple-mobile-web-app-title": "Sympla",
+    "apple-mobile-web-app-status-bar-style": "#0097ff"
+  },
+  "icons": [
+    {
+      "src": "https://www.sympla.com.br/images/public/favicon/new/android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "https://www.sympla.com.br/images/public/favicon/new/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "https://www.sympla.com.br/images/public/favicon/new/android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }, {
+      "src": "https://www.sympla.com.br/images/public/favicon/new/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "https://www.sympla.com.br/images/public/favicon/new/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }

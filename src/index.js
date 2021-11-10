@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 /** routes */
-import Routes from './routes/Routes'
+import Routes from "./routes/Routes";
 /** firebase */
-import firebase from 'firebase/app'
-import {credentials} from './credentials'
+import { initializeApp } from "firebase/app";
+import { credentials } from "./credentials";
 /** css */
-import './assets/css/main.scss'
+import "./assets/css/main.scss";
 
-firebase.initializeApp(credentials)
+initializeApp(credentials);
 
-ReactDOM.render(<Routes />, document.getElementById('root'))
+ReactDOM.render(<Routes />, document.getElementById("root"));

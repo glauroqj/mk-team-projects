@@ -15,33 +15,23 @@ import seta from '../assets/images/pink-october/seta.png'
 const PinkOctober = () => {
   const [state, setState] = useState({
     loading: false,
-    arrayImg: [
-      img1,
-      img2,
-      img3,
-      img4,
-      img5
-    ],
-    hasArrow: true
+    arrayImg: [img1, img2, img3, img4, img5],
+    hasArrow: true,
   })
 
   useEffect(() => {
-
-    setTimeout(() => setState({...state, hasArrow: false}), 6000)
-
-  }, [])
+    setTimeout(() => setState({ ...state, hasArrow: false }), 6000)
+  }, [state])
 
   if (state.loading) return <Loading text='Carregando...' />
 
   return (
-    <div className="pink-october animated fadeIn">
+    <div className='pink-october animated fadeIn'>
       {state.hasArrow && (
-        <img className="seta animated pulse infinite" src={seta} alt="seta" />
+        <img className='seta animated pulse infinite' src={seta} alt='seta' />
       )}
 
-      <CarrouselBanner 
-        images={state.arrayImg}
-      />
+      <CarrouselBanner images={state.arrayImg} />
     </div>
   )
 }
